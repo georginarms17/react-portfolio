@@ -1,0 +1,124 @@
+.project-section {
+    padding: 40px 0;
+}
+
+.project-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-self: space-between;
+    align-items: center;    
+    margin: 5px;
+    gap: 300px;
+    background-color: white;
+    border: 2px solid var(--link--color);
+    border-radius: 30px;
+}
+
+.project-section h2 {
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-size: 50px;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}   
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px; 
+    height: 420px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.project-title {
+    cursor: pointer;
+    color: var(--link--color);
+    transition: color 0.2s ease-in-out;
+}
+
+.project-title:hover {
+    color: var(--hover-color);
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.card-body .btn {
+    font-family: "Libertinus Serif", serif;
+    background-color: var(--link--color);
+    color: #fff;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.card-body .btn:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+h5 {
+    font-size: 30px !important;
+}
+
+@media (max-width: 992px) {
+    .col-md-4 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        height: 160px;
+    }
+}

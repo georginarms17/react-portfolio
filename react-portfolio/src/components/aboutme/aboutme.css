@@ -1,0 +1,97 @@
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 300px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.aboutMe .text {
+    flex: 1;
+}
+
+.aboutMe .text h2 {
+    color: var(--link--color);
+    font-size: 60px;
+    font-weight: 600;
+    white-space: nowrap;         
+    overflow: hidden;            
+    border-right: 3px solid var(--link--color); 
+    width: 0;                     
+    animation: typing 3s steps(25, end) infinite alternate,
+           blinkCursor 0.7s step-end infinite;
+}
+
+.aboutMe .text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.aboutMe .links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.aboutMe .links a {
+    border: 2px solid var(--link--color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: var(--link--color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.aboutMe .links a:hover {
+    background-color: var(--link--color);
+    color: white;
+}
+
+.aboutMe .picture {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe .picture img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 991px) {
+    .aboutMe {
+        padding: 20px 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutMe .picture img {
+        width: 250px;
+        height: 250px;
+        align-items: center; 
+    }
+
+    .aboutMe .text h2 {
+        font-size: 35px;
+    }
+
+    .aboutMe .text p {
+        font-size: 18px;
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}

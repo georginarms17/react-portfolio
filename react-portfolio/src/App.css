@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libertinus+Serif&display=swap');
+
+:root {                                  /*global variable*/
+  --text-color: #000000;
+  --link--color: #DB1B60;
+  --background-color: #EEF9FF;
+  --hover-color: #DFA2B9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* App.css */
+body {
+  font-family: "Libertinus Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0 10px;
+  height: 100%;
+  background: linear-gradient(to bottom, #DFA2B9, #FAC0D5, #FFE9F1);
+}
+
+p {
+  font-family: "Libertinus Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2, h5 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: #DB1B60 !important;
+}
+
+a {                                                 /*anchor tags*/
+  font-family: "Libertinus Serif", serif;
+  color: var(--link--color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer .container {
+  background-color: var(--link--color);
+  border-radius: 30px;
+  color: #FFFFFF;
+}
